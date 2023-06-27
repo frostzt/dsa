@@ -1,10 +1,11 @@
-package main
+package array
 
 import (
 	"fmt"
 	"reflect"
 )
 
+// Reverses a string or an integer array
 func reverse(input interface{}) any {
 	switch input := input.(type) {
 	case string:
@@ -48,16 +49,4 @@ func reverse(input interface{}) any {
 			return -1
 		}
 	}
-}
-
-func main() {
-	hello := "Hello World"
-	reversedHello := reverse(hello)
-
-	fmt.Println(reversedHello)
-
-	number := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	reversedNumber := reverse(number)
-
-	fmt.Println(reversedNumber)
 }
