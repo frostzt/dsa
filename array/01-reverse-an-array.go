@@ -6,6 +6,8 @@ import (
 )
 
 // Reverses a string or an integer array
+//
+//lint:file-ignore U1000 Ignore unused code since this is a DSA repository
 func reverse(input interface{}) any {
 	switch input := input.(type) {
 	case string:
